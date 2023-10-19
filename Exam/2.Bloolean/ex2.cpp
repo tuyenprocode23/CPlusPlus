@@ -1,13 +1,24 @@
 #include <iostream>
 
-using namespace std ;
+using namespace std;
 
-int main()
-{
-    float a, b ;
-    cin >> a >> b ;
-    cout <<  a << " + " << b << " = " << a + b << endl ;
-    cout << a << " - " << b << " = " << a - b << endl;
-    cout << a << " / " << b << " = " << a / b;
-    return 0 ;
+int main () {
+
+    int i = 53;
+
+    if ( i % 5 == 0 ) {
+
+        cout << " Chia het cho 5 ";
+
+    } else if ( i % 2 == 0 ) {
+
+        cout << " Chia het cho 2 ";
+
+    } else {
+        
+        cout << " Khong chia het cho 5 va 2 ";
+    }
+
+    return 0;
+
 }
