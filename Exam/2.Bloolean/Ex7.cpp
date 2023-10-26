@@ -4,7 +4,9 @@ using namespace std;
 
 int main () {
 
-    int month = 2;
+    int month;
+
+    cin >> month;
 
     switch (month)
     {
@@ -16,7 +18,7 @@ int main () {
         case 10:
         case 12:
 
-            cout << " 31 ngay " ;
+            cout << "  Thang " << month << " co 31 ngay " ;
 
         break;
 
@@ -25,19 +27,19 @@ int main () {
         case 9:
         case 11:
 
-            cout << " 30 ngay " ;
+            cout << "  Thang " << month << " co 30 ngay " ;
         
         break;
 
         case 2:
 
-            cout << " 28 ngay " ;
+            cout << "  Thang " << month << " co 28 ngay " ;
 
         break;
 
     default:
 
-            cout << " Unknow ";
+            cout << " Thang khong hop le ";
 
         break;
     }
