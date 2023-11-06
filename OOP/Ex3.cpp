@@ -5,30 +5,30 @@ using namespace std;
 class HCN {
 
     private:
-        float chieudai;
-        float chieurong;
+        float D;
+        float R;
     
     public:
         void nhap();
         void Ve();
-        void DienTich();
-        void ChuVi();
+        float DienTich();
+        float ChuVi();
 
 };
 
 void HCN::nhap() {
 
-    cout << " Nhap vao Chieu Dai: "; cin >> chieudai;
-    cout << " Nhap vao Chieu Rong: "; cin >> chieurong;
+    cout << " Nhap vao Chieu Dai: "; cin >> D;
+    cout << " Nhap vao Chieu Rong: "; cin >> R;
 
 }
 
 void HCN::Ve() {
 
-    for(int i = 0; i<chieudai; i++)
+    for(int i = 0; i<D; i++)
     {
 
-        for(int j = 0; j<chieurong; j++)
+        for(int j = 0; j<R; j++)
 
             cout << "*";
 
@@ -38,22 +38,22 @@ void HCN::Ve() {
 
 }
 
-void HCN::DienTich() {
+float HCN::DienTich() {
 
-    return chieudai * chieurong;
+    return D * R;
 
 }
 
-void HCN::ChuVi() {
+float HCN::ChuVi() {
 
-    return 2 * (chieudai + chieurong);
+    return 2 * (D + R);
 
 }
 
 int main () {
 
     HCN x;
-    cout << "-----NHAP THONG TIN CUA HINH CHU NHAT-----"; endl;
+    cout << "-----NHAP THONG TIN CUA HINH CHU NHAT-----" << endl;
     x.nhap();
     x.Ve();
     cout << " Dien Tich cua Hinh Chu Nhat " << x.DienTich() << endl;
